@@ -1,6 +1,7 @@
 import Input from "./components/Input"
 import Button from "./components/Button"
 import "./App.css"
+import Table from "./components/Table"
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      <Table></Table>
     </div>
   )
 }
