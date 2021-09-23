@@ -4,7 +4,7 @@ import "./button.css"
 const Button = () => {
   return (
     <div>
-      <button className="btn">Enviar</button>
+      <button className="btn">ENVIAR</button>
     </div>
   )
 }

@@ -1,11 +1,26 @@
 .app {
     width: 800px;
-    background-color: aqua;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 10px;
+    margin-top: 10px;
 }
 
-.input {
+.title {
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    background-color: white;
+}
+
+.box-input {
+    position: relative;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.box-inputs {
     display: flex;
     flex-direction: row;
     justify-content: space-around;

@@ -6,12 +6,12 @@ const App = () => {
   return (
     <div className="app">
       <div className="box-input">
-        <p>Formulário de Cadastro</p>
+        <p className="title">Formulário de Cadastro</p>
         <div className="input-body">
-          <div className="input">
-            <Input placeholder="Nome: " />
-            <Input placeholder="Email: " />
-            <Input placeholder="Senha: " />
+          <div className="box-inputs">
+            <Input placeholder="Nome: " type="text" />
+            <Input placeholder="Email: " type="email" />
+            <Input placeholder="Senha: " type="password" />
             <Button />
           </div>
         </div>
