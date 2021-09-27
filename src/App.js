@@ -4,6 +4,15 @@ import "./App.css"
 import Table from "./components/Table"
 
 const App = () => {
+  const initUser = [{
+    name: "ciclano da Silva",
+    email: "fulana@gmail.com",
+    password: "123abc"
+  }]
+
+  const onSubmit = () => {
+    console.log("fUI APERTADO")
+  }
   return (
     <div className="app">
       <div className="box-input">
@@ -13,13 +22,14 @@ const App = () => {
             <Input placeholder="Nome: " type="text" />
             <Input placeholder="Email: " type="email" />
             <Input placeholder="Senha: " type="password" />
-            <Button />
+            <Button text="ENVIAR" onClick={onSubmit} />
           </div>
         </div>
       </div>
-      <Table></Table>
+      <Table users={initUser}></Table>
     </div>
   )
 }
+
 
 export default App

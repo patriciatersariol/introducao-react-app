@@ -1,0 +1,29 @@
+.table{
+  width: 800px;  
+  margin: 5px auto;
+  border: 1px solid gray;
+}
+.table-row{
+  border: 1px solid gray;
+  background-color: #04AA6D;
+}
+.table-column{
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 1.2rem;
+  text-align: justify;
+  border: 1px solid white;
+}
+.last-column{
+  text-align: center;
+}
+.user-row{
+    border: 1px solid gray;
+    background-color: #DDDDDD;
+}
+.user-column{
+    padding: 15px;
+    border: 1px solid white;
+    font-size: 18px;
+}
