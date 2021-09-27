@@ -37,13 +37,30 @@ const App = () => {
   const handleSend = () => {
     console.log("fUI APERTADO")
     const itensCopy = Array.from(users)
-    itensCopy.push({
-      name: name,
-      email: email,
-      password: password
+    // itensCopy.push({
+    //   name: name,
+    //   email: email,
+    //   password: password
+    // })
+    // setUsers(itensCopy)
+    fetch("http://localhost:3030/usuario", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json"
+      },
+      body: {
+        name: name,
+        email: email,
+        password: password
+      }
     })
-    setUsers(itensCopy)
-    console.log(users)
+      .then((res) => res.json())
+      .then((res) =>
+        fetch("http://localhost:3030/usuario")
+          .then((res) => res.json())
+          .then((res) => setUsers(res.users))
+      )
+
     setName("")
     setPassword("")
     setEmail("")
@@ -77,7 +94,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <Table users={users}></Table>
+      <Table setUsers={setUsers} users={users}></Table>
     </div>
   )
 }
