@@ -3,10 +3,16 @@
   margin: 5px auto;
   border: 1px solid gray;
 }
+
 .table-row{
   border: 1px solid gray;
   background-color: #04AA6D;
 }
+
+tr:nth-child(even) {
+  background:#F2F2F2;
+}
+
 .table-column{
   color: white;
   font-weight: bold;
